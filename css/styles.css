@@ -1,9 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
+
+@font-face {
+  font-family: 'benella'; /* Name your font family */
+  src: url('Benalla.ttf'); /* Locate the .ttf file within your directory*/
+}
 :root {
   --primary-color: #a855f7;
   --primary-color-dark: #9333ea;
-  --secondary-color: #ca8a04;
+  --secondary-color: #9333ea;
   --text-dark: #1f2937;
   --text-light: #6b7280;
   --extra-light: #faf5ff;
@@ -44,12 +49,15 @@ nav {
 
 nav .logo a {
   font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--primary-color);
+  font-weight: 400;
+  color: black;
   transition: 0.3s;
+  font-family: 'benella';
 }
 nav .logo a:hover {
   color: var(--primary-color-dark);
+  font-weight: bolder;
+  /* font-size:1.6rem; */
 }
 
 nav .checkbox {
@@ -82,7 +90,7 @@ ul li a {
   transition: 0.3s;
 }
 
-ul li a:hover {
+ul.menu li a:hover {
   border-top-color: var(--secondary-color);
   border-bottom-color: var(--secondary-color);
   color: var(--secondary-color);
@@ -138,7 +146,7 @@ ul li a:hover {
   gap: 1rem;
 }
 
-.action__btns button {
+.action__btns button ,.action__btns a{
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: 2px;
@@ -177,9 +185,49 @@ ul li a:hover {
   border-radius: 100%;
 }
 
+
+
+.footer {
+  background-color: black;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+}
+
+.social-links li {
+  display: auto;
+  margin-right: 10px;
+}
+
+.social-links li:last-child {
+  margin-right: 0;
+}
+
+.social-links a {
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: #a855f7;
+}
+.social-links p {
+  margin-left: 220px;
+}
+
 @media (width < 750px) {
+  .footer{
+    padding: 10px 0;
+  }
   nav .checkbox {
     display: block;
+    
   }
 
   ul {
@@ -193,6 +241,10 @@ ul li a:hover {
     justify-content: center;
     gap: 3rem;
   }
+  .footer-content {
+    margin-top: 15px;
+}
+
 
   nav #check:checked ~ ul {
     left: 0;
@@ -215,4 +267,26 @@ ul li a:hover {
   .action__btns {
     margin: auto;
   }
+  ul.social-links{
+    display:block;
+    position: initial;
+    height:auto;
+    background: black;
+  }
+  ul.social-links li{
+    display: inline;
+    /* width:30px; */
+    
+  }
+  ul.social-links  p{
+    margin: 0 auto;
+    margin-top: 15px;
+    font-size:0.7rem;
+  }
 }
+
+
+
+
+
+

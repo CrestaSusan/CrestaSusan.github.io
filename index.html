@@ -7,20 +7,24 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
       rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Susan Shrestha | Portfolio</title>
   </head>
   <body>
     <nav>
       <div class="nav__content">
-        <div class="logo"><a href="#">Susan Shrestha</a></div>
+        <div class="logo">
+          <!-- <img src="assets/logo.PNG"> -->
+          <h1 class="logo-text"><a href="">Susan Shrestha</a></h1>
+        </div>
         <label for="check" class="checkbox">
           <i class="ri-menu-line"></i>
         </label>
         <input type="checkbox" name="check" id="check" />
-        <ul>
+        <ul class="menu">
           <li><a href="#">Home</a></li>
           <li><a href="#">Projects</a></li>
-          <li><a href="#">Resume</a></li>
+          <li><a href="cv/SusanShrestha.pdf">Resume</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </div>
@@ -37,14 +41,29 @@
             With over ten years of hands-on experience, I've got a knack for building networks that are both powerful and reliable.
           </p>
           <div class="action__btns">
-            <button class="hire__me">Contact</button>
-            <button class="portfolio"><a href="cv/SusanShrestha.pdf">Resume</a></button>
+            <button target="_blank" title="Reach Me !!"  class="hire__me">Contact</button>
+            <a href="cv/SusanShrestha.pdf" target="_blank" title="Download Resume"  class="portfolio">Resume</a>
           </div>
         </div>
         <div class="image">
           <img src="assets/profile.jpg" alt="profile" />
         </div>
       </div>
+      
     </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <ul class="social-links">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            <p>&copy; 2024 Susan Shrestha. All rights reserved.</p>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
